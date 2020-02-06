@@ -2,7 +2,9 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~
+# Rusty Triangles
+## Mike Garrity
 
-There should be whitespace between paragraphs.
+This is the github page for rustytriangles.com.
 
+![logo](images/low-res.jpg)
