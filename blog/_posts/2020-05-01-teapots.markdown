@@ -1,0 +1,33 @@
+---
+layout: post
+title:  "Hello Teapots!"
+date:   2020-05-01 08:01:44 -0400
+categories: jekyll update
+---
+Someone I work with once said that instead of "Hello World!", I write "Hello Teapot!".
+
+The teapot is basically what I use to get a feel for any graphics system or technical computing 
+platform. For example, the [MATLAB teapot demo](https://www.mathworks.com/help/matlab/visualize/displaying-complex-three-dimensional-objects.html) 
+is the first thing I wrote when I joined the MathWorks, as told in [my first post](https://blogs.mathworks.com/graphics/2014/10/03/welcome/) on the graphics
+blog there.
+
+So here are a couple of recent teapots to get things rolling here at Rusty Triangles.
+
+## Rust
+The [first one](https://github.com/rustytriangles/rust-teapot) is written in Rust and uses [wgpu-rs](https://github.com/gfx-rs/wgpu-rs) for the rendering. 
+This was the first Rust I'd written and is probably a bit ugly in how it's slicing the multidimensional arrays.
+I like wgpu-rs. In particular, it's shader support is pretty nice.
+
+![Rust Teapot]({{site.baseurl}}/images/rust_teapot_screenshot.png)
+
+## WebGL
+The [second one](https://github.com/rustytriangles/webgl-teapot) is written in JavaScript and uses WebGL.
+This is using [electron](https://www.electronjs.org/) to run as a local app. Numerics in JavaScript are
+always a bit weird. I used [gl-matrix](http://glmatrix.net/) to deal with some of the worst of that. Your 
+shaders are always an issue with WebGL. In this case they're just strings. That means you're probably going 
+to have typos and cryptic error messags at startup. On the other hand, I'm more comfortable with JS than
+Rust at this point, and having [mocha](https://mochajs.org/) & [istanbul](https://istanbul.js.org/) 
+made things go pretty quickly. I have learned more about Rust unittests since I wrote the one above.
+
+![WebGL Teapot]({{site.baseurl}}/images/webgl_teapot_screenshot.png)
+
