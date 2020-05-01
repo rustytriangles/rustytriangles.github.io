@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title:  "Hello Teapots!"
 date:   2020-05-01 08:01:44 -0400
@@ -30,4 +30,16 @@ Rust at this point, and having [mocha](https://mochajs.org/) & [istanbul](https:
 made things go pretty quickly. I have learned more about Rust unittests since I wrote the one above.
 
 ![WebGL Teapot]({{site.baseurl}}/images/webgl_teapot_screenshot.png)
+
+## The Math
+I dug into the details of the math behind the teapot in [another MATLAB Graphics blog post](https://blogs.mathworks.com/graphics/2015/05/12/patch-work/).
+Basically, the teapot is composed of 32 cubic Bézier patches. A cubic Bézier patch has 16 control points
+arranged in a 4x4 grid. To get a point on the patch, you substitute U & V into a 4x4 matrix composed of two copies
+of the Bernstein basis polynomial and multiply that by the control points.
+
+You can take the first partials of the polynomials to get a pair of tangent vectors. The cross product 
+of those gives you a normal vector at that point. However, as you can see in the first screenshot, this 
+has an issue at the very top and very bottom of the teapot. There are dark "nipples" there. What's 
+happening there is that four of the control points are coincident. As a result, one of the partial 
+derivative is zero length. There are a few good ways to work around that, but I  don't bother.
 
