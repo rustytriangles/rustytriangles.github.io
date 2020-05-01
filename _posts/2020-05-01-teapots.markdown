@@ -41,5 +41,4 @@ You can take the first partials of the polynomials to get a pair of tangent vect
 of those gives you a normal vector at that point. However, as you can see in the first screenshot, this 
 has an issue at the very top and very bottom of the teapot. There are dark "nipples" there. What's 
 happening there is that four of the control points are coincident. As a result, one of the partial 
-derivative is zero length. There are a few good ways to work around that, but I  don't bother.
-
+derivative is zero length. There are a few good ways to work around that, but I often don't bother.
