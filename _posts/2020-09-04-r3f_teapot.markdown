@@ -5,7 +5,7 @@ date:   2020-09-04 10:15:00 -0400
 categories: jekyll update
 ---
 I've been spending some time with [React](https://reactjs.org/) lately.
-Naturually, that meant that I needed to do another teapot.
+Naturally, that meant that I needed to do another teapot.
 I found the [React Three Fiber project](https://github.com/react-spring/react-three-fiber) which
 provides a react renderer that makes it really easy to plug [three.js](https://threejs.org/) content
 into a React app. So I used that to make [this github page](https://rustytriangles.github.io/r3f-teapot/).
