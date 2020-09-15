@@ -25,6 +25,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: ""
 url: "https://rustytriangles.github.io/"
 github_username:  rustytriangles
+google_analytics: UA-178045899-1
 
 show_excerpts: true
 
