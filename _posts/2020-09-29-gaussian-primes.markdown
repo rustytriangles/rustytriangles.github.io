@@ -13,3 +13,5 @@ I knew I needed to make an interactive toy to play with the patterns. Since I'd 
 SVG & React, I used those. The result is [here](https://github.com/rustytriangles/gaussian_primes). I also
 deployed it to [this github page](https://rustytriangles.github.io/gaussian_primes/) so you can play with it too.
 
+![Gaussian Primes]({{site.baseurl}}/images/gaussian_primes_screenshot.png)
+
