@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Hex Tiles"
+date:   2020-10-02 16:24 :44 -0400
+categories: jekyll update
+---
+I was playing around with the [path tiles](https://rustytriangles.github.io/jekyll/update/2020/09/22/tile_explorer.html) again. This type I made a page that creates a grid of random Hexagon/1 tiles for you and then lets you edit them. You can find it at [this github page](https://rustytriangles.github.io/hextile/).
+
+![hextile]({{site.baseurl}}/images/hextile_screenshot.png)
+
+It's written in React and SVG. You can find the source [here](https://github.com/rustytriangles/hextile).
+
