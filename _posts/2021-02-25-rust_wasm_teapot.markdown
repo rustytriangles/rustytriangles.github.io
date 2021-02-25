@@ -18,4 +18,4 @@ a module you can call from JavaScript.
 Connecting the two is surprisingly simple. You just mark the functions and types you want to
 expose to javascript with the `wasm_bindgen` macro and then you can `import` them in your JS code.
 
-You can run it from [github pages](https://rustytriangles.github.io/rust-wasm-teapot/).
+The source is [here](https://github.com/rustytriangles/rust-wasm-teapot). You can run it from [github pages](https://rustytriangles.github.io/rust-wasm-teapot/).
